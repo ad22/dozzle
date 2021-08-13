@@ -2,24 +2,6 @@
   <div>
     <section class="section">
       <div class="has-underline">
-        <h2 class="title is-4">About</h2>
-      </div>
-
-      <div>
-        You are using Dozzle <i>{{ currentVersion }}</i
-        >.
-        <span v-if="hasUpdate">
-          New version is available! Update to
-          <a :href="nextRelease.html_url" class="next-release" target="_blank" rel="noreferrer noopener">{{
-            nextRelease.name
-          }}</a
-          >.
-        </span>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="has-underline">
         <h2 class="title is-4">Display</h2>
       </div>
       <div class="item">
@@ -37,7 +19,7 @@
             </b-field>
           </div>
           <div class="column">
-            By default, Dozzle will use your browser's locale to format time. You can force to 12 or 24 hour style.
+            By default, we will use your browser's locale to format time. You can force to 12 or 24 hour style.
           </div>
         </div>
 
@@ -74,7 +56,7 @@
 
       <div class="item">
         <b-switch v-model="search">
-          Enable searching with Dozzle using <code>command+f</code> or <code>ctrl+f</code>
+          Enable searching using <code>command+f</code> or <code>ctrl+f</code>
         </b-switch>
       </div>
 

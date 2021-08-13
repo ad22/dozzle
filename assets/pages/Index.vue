@@ -1,40 +1,5 @@
 <template>
   <div>
-    <section class="hero is-small mt-4">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h1 class="title">Hello, there!</h1>
-            </div>
-            <div class="column is-narrow" v-if="secured">
-              <a class="button is-primary is-small" :href="`${base}/logout`">Logout</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="level section is-mobile">
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="title">{{ containers.length }}</p>
-          <p class="heading">Total Containers</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="title">{{ runningContainers.length }}</p>
-          <p class="heading">Running</p>
-        </div>
-      </div>
-      <div class="level-item has-text-centered">
-        <div>
-          <p class="title">{{ version }}</p>
-          <p class="heading">Dozzle Version</p>
-        </div>
-      </div>
-    </section>
-
     <section class="columns is-centered section is-marginless">
       <div class="column is-4">
         <div class="panel">

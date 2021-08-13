@@ -25,17 +25,6 @@
         </splitpanes>
       </pane>
     </splitpanes>
-    <button
-      @click="collapseNav = !collapseNav"
-      class="button is-small is-rounded is-settings-control"
-      :class="{ collapsed: collapseNav }"
-      id="hide-nav"
-      v-if="!isMobile && !authorizationNeeded"
-    >
-      <span class="icon">
-        <icon :name="collapseNav ? 'chevron-right' : 'chevron-left'"></icon>
-      </span>
-    </button>
   </main>
 </template>
 
@@ -57,12 +46,8 @@ export default {
   name: "App",
   components: {
     Icon,
-    SideMenu,
     LogContainer,
-    MobileMenu,
-    Splitpanes,
     PastTime,
-    Pane,
   },
   data() {
     return {
